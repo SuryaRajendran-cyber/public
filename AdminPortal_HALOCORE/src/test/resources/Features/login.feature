@@ -14,7 +14,6 @@ Feature: Feature to test login functionality
     Examples:
     |username | password |
     |infodba | infodba |
-    |Teamcenter | Teamcenter |
     
 
 

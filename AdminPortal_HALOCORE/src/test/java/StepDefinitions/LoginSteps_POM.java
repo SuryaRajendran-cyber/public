@@ -11,7 +11,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pagefactory.Browserlaunch_PF;
+//import pagefactory.Browserlaunch_PF;
 import pagefactory.LogOut_PF;
 import pagefactory.LoginPage_PF;
 
@@ -22,14 +22,13 @@ public class LoginSteps_POM {
 	WebDriver driver =null;
 	LoginPage_PF login;
 	LogOut_PF logout;
-	//Browserlaunch_PF browserlaunch;
+//	Browserlaunch_PF browserlaunch;
 	
 	@SuppressWarnings("deprecation")
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
-		//hello allbnmm
-		//browserlaunch =new Browserlaunch_PF(driver);
-		//browserlaunch.browserLaunch();
+//		browserlaunch =new Browserlaunch_PF(driver);
+//		browserlaunch.browserLaunch();
 		String projectPath = System.getProperty("user.dir");
 		  System.out.println("Project path is:"+projectPath);
 		  System.setProperty("Webdriver.chrome.driver",projectPath+"/src/test/resources/drivers/chromedriver.exe");
@@ -40,6 +39,7 @@ public class LoginSteps_POM {
 		  driver.navigate().to("http://svlu0363:8080/awc/#/showHome");
 		  driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		  driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		 
 	}
 
 	@When("^user enters (.*) and (.*)$")
