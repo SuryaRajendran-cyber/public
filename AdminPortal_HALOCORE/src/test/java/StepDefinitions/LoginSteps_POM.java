@@ -27,7 +27,7 @@ public class LoginSteps_POM {
 	@SuppressWarnings("deprecation")
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
-		//hello all
+		//hello allbnmm
 		//browserlaunch =new Browserlaunch_PF(driver);
 		//browserlaunch.browserLaunch();
 		String projectPath = System.getProperty("user.dir");
@@ -38,8 +38,8 @@ public class LoginSteps_POM {
 		  driver =new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.navigate().to("http://svlu0363:8080/awc/#/showHome");
-		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		  driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		  driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+		  driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
 	@When("^user enters (.*) and (.*)$")
@@ -59,8 +59,8 @@ public class LoginSteps_POM {
 	@And("user is navigated to home page")
 	public void user_is_navigated_to_home_page() {
 		System.out.println("Inside step User navigated to home page");
-		 driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		  driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+		  driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	    
 	}
 	@And("clicks on profile button")
